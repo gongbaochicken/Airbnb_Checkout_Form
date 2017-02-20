@@ -1,0 +1,342 @@
+@import 'https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900';
+
+/*$goldfusion: #7B7554;
+$yankeesblue: #17183B;
+$darkmagenta: #A11692;
+$fieryrose: #FF4F79;
+#FFB49A: #FFB49A;*/
+
+body {
+	background: #17183B;
+	color: #17183B;
+	font-family: 'Lato', sans-serif;
+}
+
+.App {
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #79CCCD;
+}
+
+.Overlay {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  filter: blur(5px);
+  opacity: .4;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  background: white;
+  z-index: 10;
+  padding: 20px;
+}
+
+.Container {
+  display: flex;
+  height: 550px;
+  max-width: 650px;
+  z-index: 3;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.ImagePreview {
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  width: 50%;
+}
+
+.RoomInformation {
+  color: white;
+  position: relative;
+  z-index: 20;
+  width: 100%;
+  padding: 20px;
+	bottom: 60px;
+}
+
+.RoomName {
+	left:20%;
+	color: white;
+  font-weight: 600;
+  font-size: 34px;
+}
+
+.RoomLocation{
+	left:20%;
+	color: white;
+  font-weight: 600;
+  font-size: 26px;
+}
+
+.RoomPrice {
+	left:20%;
+	color: white;
+  display: flex;
+  align-items: flex-end;
+  margin-top: 20px;
+}
+
+.Price {
+  font-size: 24px;
+  font-weight: 200;
+}
+
+.Duration {
+  font-size: 24px;
+  font-weight: 300;
+  position: relative;
+  bottom: 2px;
+  margin-left: 5px;
+}
+
+.RoomMeta {
+  color: white;
+  line-height: 1.6;
+  font-size: 13px;
+  font-weight: 300;
+  margin: 20px;
+}
+
+.RoomMeta strong {
+  font-weight: 600;
+}
+
+.Checkout {
+	background: white;
+	width: 50%;
+}
+.Checkout	.OrderSummary {
+	border-bottom: 1px solid white;
+	padding-bottom: 10px;
+}
+
+.Checkout	table {
+	font-size: 12px;
+	margin: 0 20px;
+	margin-bottom: 10px;
+	line-height: 1.6;
+	width: calc(100% - 40px);
+	opacity: .8;
+	font-weight: 400;
+}
+.Checkout	tr {
+  /*td:last-child {*/
+	text-align: right;
+	font-weight: 600;
+}
+
+.Checkout .Total {
+	display: flex;
+	padding: 0 20px;
+	margin-bottom: 10px;
+	align-items: flex-end;
+}
+
+.Checkout .TotalLabel {
+	display: block;
+	text-transform: uppercase;
+	margin-bottom: 5px;
+	font-size: 18px;
+	font-weight: 600;
+}
+
+.Checkout .Amount {
+	font-size: 18px;
+	margin-left: auto;
+}
+
+.Checkout .Title {
+	font-size: 22px;
+	font-weight: 400;
+	padding: 20px;
+	text-align: center;
+	background: #F16664;
+	color: white;
+}
+
+.Checkout .PaymentForm{
+	margin-top: -20px;
+}
+
+.Checkout .PaymentTitle {
+	font-size: 18px;
+	padding: 15px;
+}
+
+.BasicInput {
+	padding: 0 10px;
+	margin-bottom: 15px;
+}
+.BasicInput label {
+  display: block;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+input {
+	width: 100%;
+	border: 0;
+	border-bottom: 1px solid #17183B;
+	font-family: 'Lato', sans-serif;
+	padding: 5px 0;
+	font-size: 18px;
+	font-weight: 300;
+	outline: none;
+}
+
+input::focus {
+	border-bottom: 1px solid #FFB49A;
+}
+
+.ExpiryDate {
+	display: flex;
+	margin-bottom: 20px;
+	padding: 0 20px;
+	width: 100%;
+	box-sizing: border-box;
+	flex-wrap: nowrap;
+}
+.ExpiryDate label {
+  display: block;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.Expiry {
+	display: flex;
+}
+
+.Expiry input {
+	width: 100%;
+	border: 0;
+	border-bottom: 1px solid #17183B;
+	font-family: 'Lato', sans-serif;
+	padding: 5px 0;
+	font-size: 18px;
+	font-weight: 300;
+	outline: none;
+}
+
+.Expiry select {
+	appearance: none;
+	flex: 1 0 auto;
+	padding: 10px;
+	border-radius: 0;
+	border: 0;
+	background: transparent;
+	border-bottom: 1px solid #17183B;
+	border-bottom: 1px solid #17183B;
+	font-family: 'Lato', sans-serif;
+	padding: 5px 0;
+	font-size: 18px;
+	font-weight: 300;
+	outline: none;
+	margin-right: 10px;
+}
+
+.CVCField {
+	width: 20%;
+}
+
+.CVC {
+	display: flex;
+	margin-bottom: 20px;
+	padding: 0 20px;
+}
+
+.CVC label {
+	display: block;
+	text-transform: uppercase;
+	margin-bottom: 5px;
+	font-size: 11px;
+	font-weight: 600;
+}
+
+.CVC input {
+	width: 100%;
+	border: 0;
+	border-bottom: 1px solid #17183B;
+	font-family: 'Lato', sans-serif;
+	padding: 5px 0;
+	font-size: 18px;
+	font-weight: 300;
+	outline: none;
+}
+
+.CVC:focus {
+	border-bottom: 1px solid #FFB49A;
+}
+
+.CVC span {
+	display: block;
+	padding-top: 20px;
+	margin-left: 10px;
+	color: #FFB49A;
+	font-size: 11px;
+	border-bottom: 1px dotted #FFB49A;
+}
+
+.CheckoutButton {
+	padding: 0 20px;
+	text-align: center;
+}
+
+.CheckoutButton button {
+	background: #F16664;
+	color: white;
+	border: 0;
+	border-radius: 5%;
+	font-family: 'Lato', sans-serif;
+	width: 100%;
+	font-size: 16px;
+	font-weight: 600;
+	text-transform: uppercase;
+	outline: none;
+	padding: 10px 0;
+}
+
+.CheckoutButtonSpan {
+	font-size: 12px;
+	color: black;
+	text-align: center;
+}
+
+.overlay-enter {
+  opacity: 0.01;
+}
+
+.overlay-enter.overlay-enter-active {
+  opacity: .2;
+  transition: opacity .5s ease .5s;
+}
+
+.container-enter {
+  opacity: 0.01;
+}
+
+.container-enter.container-enter-active {
+  opacity: 1;
+  transition: opacity .5s ease;
+}
